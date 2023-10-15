@@ -1,6 +1,15 @@
 # DataTable with ActiveRecord::Relation extension
 An over-the-top inline Sql-type data handling model with an extension to ActiveRecord::Relation enabling conversion from query results to DataTable objects.
+### Files
 
+   **data_table.rb**: A data handling objects for tables
+   
+   **print_helper.rb**: A utilitiy for prettifying writing to console
+   
+   **data_table_with_print_helper.rb**: DataTable with print to console methods
+   
+   **active_record_relation_extension.rb**: Extension to ActiveRecord::Relation that enables conversion of ActiveRecord queries to DataTable
+    
 ### ActiveRecord example
 See "./example.rb" for full example
 ```ruby
