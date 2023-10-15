@@ -2,10 +2,10 @@
 An over-the-top inline Sql-type data handling model with an extension to ActiveRecord::Relation enabling conversion from query results to DataTable objects.
 
 ### ActiveRecord example
-See "./example.rb" for a query 
+See "./example.rb" for full example
 ```ruby
 class Retrofit < ActiveRecord::Base
-
+    # Table has at least three columns: :operation_cost, :area, :ber
 end
 # Get the first 10 Retrofits
 dataTable = Retrofit.select([:operation_cost, :area, :ber])
@@ -20,7 +20,9 @@ dataTable.dropFeatures [:operation_cost]
 dataTable.print
 ```
 Output:
-![ActiveRecord example](https://imgur.com/a/G6HEgNW)
+<br/>
+<img src="https://i.imgur.com/HOW6GlB.png" width="300" height="425" />
+
 
 ### DataTable usage
 ```ruby
